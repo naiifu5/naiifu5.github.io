@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    font-family: 'Poppins', Arial;
+    font-size: 16px;
+    font-style: normal;
+    color: #2F2F2F;
+    line-height: 1.2;
+    font-weight: normal;
+
+}
+/*для выравнивания посередине*/
+.wrapper{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/*                                                       header                                       */
+
+.header{
+    background-color: #2F2F2F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header_item{
+    margin-right: 40px;
+    list-style: none;
+}
+.header_item:last-child{
+    margin-right: 0px;
+}
+/* как сдлеать слово Home  выделеным отдельно 
+без создание отдельного класса  */
+.header_link{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.6;
+    text-decoration: none;
+    
+}
+.header_link:hover,  .header_link:focus, .header_link:active{
+    opacity: .75;
+}
+/*как отодвинуть кнопку от основного меню*/
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    position: absolute;
+    width: 141px;
+    height: 49px;
+    left: 1233px;
+    top: 32px;
+    background: #F59B00;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*                                                     main                                                    */
+
+/*                                                    intro                                                    */
+.intro{
+    height: 100vh;
+    background: #2F2F2F;
+    padding-top: 205px;
+}
+
+/*                                                           footer                                         */
+/* разобраться с размером */
+.podval{
+    height: 368px;
+    background: url(../img/Footer\ \(1\).jpg) no-repeat center;
+    background-size: cover;
+}

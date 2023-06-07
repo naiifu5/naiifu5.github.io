@@ -28,13 +28,18 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 .header_wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     padding-top: 30px;
+}
+.header_nav{
+    margin-left: auto;
+    margin-right: 20px;
 }
 .header_list{
     display: flex;
@@ -64,19 +69,17 @@
 .header_link:hover,  .header_link:focus, .header_link:active{
     opacity: .75;
 }
-/*как отодвинуть кнопку от основного меню*/
+/*как отодвинуть кнопку от основного меню, убрать наложение */
 .button{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 15px 30px;
-    gap: 10px;
-    position: absolute;
-    width: 141px;
-    height: 49px;
-    left: 1233px;
-    top: 32px;
+  
+
+   
+    
     background: #F59B00;
     border-radius: 5px;
     font-family: 'Poppins';
@@ -92,11 +95,140 @@
 /*                                                     main                                                    */
 
 /*                                                    intro                                                    */
+/*как выровнить stylish*/
 .intro{
     height: 100vh;
     background: #2F2F2F;
     padding-top: 205px;
 }
+
+.intro-block{
+    display: flex;
+    
+}
+.intro_title{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 61px;
+line-height: 130%;
+max-width: 400px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+.logostyle{
+    position: absolute;
+width: 346px;
+height: 119px;
+left: 325px;
+top: 324px;
+size: 61px;
+}
+.h2_intro{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 30px */
+
+text-transform: uppercase;
+
+color: #F59B00;
+}
+.p_intro{
+    margin-top: 34px;
+    margin-bottom: 38px;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+/* or 26px */
+text-transform: capitalize;
+color: #FFFFFF;
+opacity: 0.7;
+
+}
+.intro-img{
+    width: 600px;
+    height: 620px;
+background: url(76VVVxYbuXRPq3imCEUNF26SCl7F3LYj+gsugi4sUidGykAMs3gZT6L66XNti7gholvZOdGmWy21ZUufVKPB3e521rglTv9k9fV1nosHJKPWJzDGbx53_4zFyeqtdfQdMBiaYbvvpA0JoqIKtF54hkexNhNAj8T3YI7BKjJMtJU4w2m+kBMhL_SHHEXVKQuFg53FhwCs-removebg.png);
+filter: drop-shadow(-30px 30px 40px rgba(119, 119, 119, 0.1));
+}
+
+
+.in-button{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px 30px;
+    gap: 10px;
+    
+    /*position: absolute;*/
+    width: 140px;
+    height: 49px;
+    top: 541px;
+    
+    background: #F59B00;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+.sale{
+    margin-left: 210px;
+    margin-bottom: 122px;
+}
+
+/*                                                                playces                                                     */
+.playces{
+    background-color: #FFFFFF;
+ 
+}
+
+.box-form{
+    background: rgba(47, 47, 47, 0.95);
+box-shadow: 0px 0px 30px 4px rgba(232, 232, 232, 0.4);
+border-radius: 10px;
+display: flex;
+
+}
+.h2-box{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 31px;
+line-height: 140%;
+/* or 43px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+}
+.box-img{
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+
+.img-firm{
+    display: flex;
+justify-content: space-between;
+margin-bottom: 106px;
+margin-top: 103px;
+}
+
+
+
+
 
 /*                                                           footer                                         */
 /* разобраться с размером */
@@ -104,4 +236,89 @@
     height: 368px;
     background: url(../img/Footer\ \(1\).jpg) no-repeat center;
     background-size: cover;
+    padding-top: 97px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-lorem{
+    padding-top: 20px;
+
+    list-style: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    
+    
+    color: #FFFFFF;
+    
+    opacity: 0.7;
+}
+.footer-col{
+    width: 25%;
+    padding: 0px;
+}
+.h4-footer{
+    /* H 06 */
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+/* identical to box height, or 30px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+.line{
+    line-height: 2.5;
+}
+
+/*                    разобраться с расположением и размерами кнопкой    */
+.button-footer{
+    width: 120px;
+    height: 39px;
+    /*left: 1109px;
+    top: 4486px;*/
+
+    background: #F59B00;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.footer-form input{
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid #B0A9A9;
+    border-radius: 4px;
+    width: 264px;
+    height: 49px
+}
+.footer-form input[type="text"]{               /*      сделать текст отдельным классом!!!!          */
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 160%;
+text-indent: 21px;
+/* identical to box height, or 26px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+opacity: 0.35;
 }
